@@ -8,6 +8,8 @@ export const Video = ({showVideo, navigation}) => {
       onBack={() => {
         showVideo();
       }}
+      disableFullscreen
+      fullscreenOrientation="all"
     />
   );
 };

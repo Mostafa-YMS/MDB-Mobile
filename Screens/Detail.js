@@ -86,7 +86,14 @@ const Detail = ({route, navigation}) => {
           <Modal
             animationType="slide"
             // transparent={true}
-            visible={modalVisible}>
+            visible={modalVisible}
+            supportedOrientations={[
+              'portrait',
+              'portrait-upside-down',
+              'landscape',
+              'landscape-left',
+              'landscape-right',
+            ]}>
             <View style={style.modalClose}>
               <Video navigation={navigation} showVideo={showVideo} />
             </View>
@@ -112,6 +119,7 @@ style = StyleSheet.create({
     marginBottom: 10,
     marginTop: 30,
     color: 'white',
+    textAlign:'center',
   },
   genres: {
     color: 'white',
